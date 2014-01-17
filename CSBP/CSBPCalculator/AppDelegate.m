@@ -89,6 +89,9 @@ static NSString *const kAllowTracking = @"allowTracking";
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     NSLog(@"Launching Options Changes %@",launchOptions);
+    NSLog(@"New Launching Options Changes %@",launchOptions);
+    NSLog(@"New Launching Options Changes %@",launchOptions);
+
     NSString* flurry_ID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Flurry API KEY"];
     [Flurry startSession:flurry_ID];
 	[Flurry setUserID:[[UIDevice currentDevice] name]];
