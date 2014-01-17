@@ -127,6 +127,7 @@
 		466E22D1163A58E8005FE6F3 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 466E22C7163A58E8005FE6F3 /* iTunesArtwork@2x.png */; };
 		46F6F0DE16342C660088C705 /* DbVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F6F0DD16342C660088C705 /* DbVersion.m */; };
 		9FF712701887FC1B00BB627F /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF7126F1887FC1B00BB627F /* libGoogleAnalyticsServices.a */; };
+		A053B547188940FC00CAF7F4 /* ev1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A053B546188940FC00CAF7F4 /* ev1.jpeg */; };
 		B105BFF715ECC89900BCB171 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = B105BFF615ECC89900BCB171 /* News.m */; };
 		B105BFFB15ECC89A00BCB171 /* Shire.m in Sources */ = {isa = PBXBuildFile; fileRef = B105BFFA15ECC89A00BCB171 /* Shire.m */; };
 		B10AEC2515AE8909000BCA91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10AEC2415AE8909000BCA91 /* UIKit.framework */; };
@@ -496,6 +497,7 @@
 		9FF7126D1887FC1B00BB627F /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
 		9FF7126E1887FC1B00BB627F /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
 		9FF7126F1887FC1B00BB627F /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		A053B546188940FC00CAF7F4 /* ev1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ev1.jpeg; sourceTree = "<group>"; };
 		B105BFF515ECC89900BCB171 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
 		B105BFF615ECC89900BCB171 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 		B105BFF915ECC89A00BCB171 /* Shire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shire.h; sourceTree = "<group>"; };
@@ -794,6 +796,7 @@
 		337DF88215D2CB120087CB0A /* icon */ = {
 			isa = PBXGroup;
 			children = (
+				A053B546188940FC00CAF7F4 /* ev1.jpeg */,
 				466E22BE163A58E8005FE6F3 /* iTunesArtwork.png */,
 				466E22BF163A58E8005FE6F3 /* icon-72.png */,
 				466E22C0163A58E8005FE6F3 /* icon-72@2x.png */,
@@ -1752,6 +1755,7 @@
 				B14FB0A015C6C223006FB9C2 /* btn_slider_international_off.png in Resources */,
 				B14FB0A115C6C223006FB9C2 /* btn_slider_international_off@2x.png in Resources */,
 				B14FB0A215C6C223006FB9C2 /* btn_slider_international_on.png in Resources */,
+				A053B547188940FC00CAF7F4 /* ev1.jpeg in Resources */,
 				B14FB0A315C6C223006FB9C2 /* btn_slider_international_on@2x.png in Resources */,
 				B14FB0A415C6C223006FB9C2 /* btn_slider_off.png in Resources */,
 				B14FB0A515C6C223006FB9C2 /* btn_slider_off@2x.png in Resources */,
