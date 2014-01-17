@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Crop" representedClassName="Crop" syncable="YES">
+        <attribute name="cropType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="nutrients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Nutrient" inverseName="crops" inverseEntity="Nutrient" syncable="YES"/>
+    </entity>
+    <entity name="CSBPContacts" representedClassName="CSBPContacts" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="shire" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Shire" inverseName="csbpContacts" inverseEntity="Shire" syncable="YES"/>
+    </entity>
+    <entity name="DbVersion" representedClassName="DbVersion" syncable="YES">
+        <attribute name="dbVersion" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="News" representedClassName="News" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publicationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="shire" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Shire" inverseName="news" inverseEntity="Shire" syncable="YES"/>
+    </entity>
+    <entity name="Nutrient" representedClassName="Nutrient" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageData_1" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="imageData_2" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="imageData_3" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="imageURL_1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURL_2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURL_3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nutrientName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="crops" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Crop" inverseName="nutrients" inverseEntity="Crop" syncable="YES"/>
+    </entity>
+    <entity name="NutrientCalculatorProduct" representedClassName="NutrientCalculatorProduct" syncable="YES">
+        <attribute name="compositionB" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="compositionCa" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="compositionCo" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="compositionCu" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="compositionK" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="compositionMg" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="compositionMn" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="compositionMo" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="compositionN" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="compositionP" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="compositionS" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="compositionZn" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="isBandingN" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isKProduct" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isNKCompound" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isNutrientCalculator" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isTargetNP" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="product" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rate" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Shire" representedClassName="Shire" syncable="YES">
+        <attribute name="shireID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shireName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="csbpContacts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CSBPContacts" inverseName="shire" inverseEntity="CSBPContacts" syncable="YES"/>
+        <relationship name="news" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="News" inverseName="shire" inverseEntity="News" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Crop" positionX="259" positionY="-18" width="128" height="75"/>
+        <element name="CSBPContacts" positionX="-54" positionY="-63" width="128" height="150"/>
+        <element name="News" positionX="178" positionY="147" width="128" height="150"/>
+        <element name="Nutrient" positionX="295" positionY="315" width="128" height="180"/>
+        <element name="NutrientCalculatorProduct" positionX="-27" positionY="393" width="128" height="345"/>
+        <element name="Shire" positionX="-279" positionY="192" width="128" height="105"/>
+        <element name="DbVersion" positionX="160" positionY="192" width="128" height="60"/>
+    </elements>
+</model>
